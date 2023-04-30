@@ -1,0 +1,259 @@
+// header //
+.menupage_header {
+    text-align: center;
+    width: 100%;
+    .arrow_head {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        font-size: 20px;
+        color: black;
+    }
+}
+// header //
+
+// body //
+.menupage_background {
+    img {
+        max-width: 100%;
+        height: 100%;
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.menupage_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    .menupage_title {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .menupage_title_text{
+        font-family: "Shrikhand", cursive;
+        font-weight: 500;
+    }
+    .line_under_title {
+        display: flex;
+        align-items: center;
+        color: #99e2d0;
+        font-size: 35px;
+        max-height: 15px;
+        margin-bottom: 20px;
+    }
+    .menu {
+        width: 90%;
+        max-width: 90%;
+        .delay_1{
+            animation: appear_menu 600ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_2{
+            animation: appear_menu 700ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_3{
+            animation: appear_menu 800ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_4{
+            animation: appear_menu 900ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_5{
+            animation: appear_menu 1000ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_6{
+            animation: appear_menu 1100ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_7{
+            animation: appear_menu 1200ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_8{
+            animation: appear_menu 1300ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_9{
+            animation: appear_menu 1400ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .delay_10{
+            animation: appear_menu 1500ms;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+        }
+        .menupage_card {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            background: white;
+            max-width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+            height: 60px;
+            color: black;
+            cursor: pointer;
+            overflow:hidden;
+            padding:10px;
+            .menupage_card_text {
+                margin:  10px auto 10px 10px;
+                max-width: 100%;
+                display: flex;
+                overflow:hidden;
+                flex-direction: column;
+                justify-content: space-between;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                .menupage_card_title {
+                    white-space: nowrap;
+                    text-overflow: hidden;
+                    font-weight: 900;
+                    overflow:hidden
+                }
+                p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-weight: 400;
+                    overflow:hidden
+                }
+            }
+            &:hover .check_container {
+                margin-right: -15px;
+                .check{
+                    animation: rotate-center 0.5s ease-in-out both;
+                }
+            }
+            .check_container{
+                background-color: #99e2d0;
+                margin:-1rem -6rem -1rem 1rem;
+                width: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: 500ms;
+                .checkdiv{
+                    height: 100%;
+                    border-radius: 0 20px 20px 0;
+                    background-color: #99e2d0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .check{
+                        color: white;  
+                        font-size: 25px;
+                    }
+                }
+            }
+            .menupage_card_price{
+                font-weight: 700;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.menupage_commande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .menupage_commande_button {
+        border-radius: 50px;
+        border-style: none;
+        color: $text_white;
+        background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        background-color:rgb(104,104,104);
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+        outline: none;
+        cursor: pointer;
+        transition: 100ms cubic-bezier(.5,1.58,.34,.82);
+        &:hover{
+            transform:scale(1); 
+            box-shadow: 2px 4px 9px rgb(0 0 0 / 50%);
+            background-color: white;
+        }
+    }
+}
+input {
+    display: none;
+}
+.menupage_heart_icon {
+    right: 6%;
+    bottom: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    .icon_menupage_full {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(top, rgba(147, 86, 220), rgba(255, 121, 218));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: initial;
+        opacity: 0;
+        position: absolute;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 330ms;
+    }
+    .check_menupage:checked + .icon_menupage_full {
+        opacity: 1;
+        animation:cubic-bezier(.32,.33,.7,.69) appear 300ms;
+    }
+    .icon_menupage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+// body //
+
+// responsive desktop //
+@media screen and (min-width: 1440px){
+    .menu {
+        display: grid;
+        grid-template-columns:  2fr  2fr  2fr ;
+        grid-template-rows: 1.8fr 0.2fr;
+        gap: 0px 20px;
+        grid-template-areas:
+          " e  p  d "
+          " c  c  c ";
+      }
+      
+      .c { grid-area: c; }
+      
+      .e { grid-area: e; }
+      
+      .p { grid-area: p; }
+      
+      .d { grid-area: d; }
+
+    .menupage_card{
+        width: 415px;
+        
+    }
+
+}
+// responsive desktop //

@@ -1,0 +1,266 @@
+// header //
+#nav {
+    width: 100%;
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: inset 0px 9px 7px -8px rgb(0 0 0 / 25%);
+    .nav_map {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+    }
+}
+// header //
+
+// body //
+.opaque_screen {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    opacity: 80%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: opaque 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 3000ms,
+    disappear 0s cubic-bezier(0.39, 0.575, 0.565, 1) both 4000ms;
+    }
+    .burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1001;
+        width: 200px;
+        height: 200px;
+        font-size: 100px;
+        background: -webkit-linear-gradient(top, rgba(147, 86, 220), rgba(255, 121, 218));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rotate_icon 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 8 both;
+    }
+#head_explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: $grey;
+    #head_title {
+        margin-bottom: 15px;
+    }
+    #head_text {
+        margin-bottom: 25px;
+    }
+    button {
+        border-radius: 50px;
+        border-style: none;
+        color: $text_white;
+        background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        background-color:rgb(104,104,104);
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
+        transition: 100ms cubic-bezier(.5,1.58,.34,.82);
+        &:hover{
+            transform:scale(1); 
+            box-shadow: 2px 4px 9px rgb(0 0 0 / 50%);
+            background-color: white;
+        }
+    }
+    .head_button{
+        outline: none;
+        cursor: pointer;
+    }
+}
+.tuto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    .tuto_title {
+        padding-bottom: 30px;
+    }
+    .tuto_card {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        background: $grey;
+        height: 70px;
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 0px 3px 8px rgb(0 0 0 / 25%);
+        transition-duration: 250ms;
+        &:hover{
+            background-color: #f5edff;
+            box-shadow: 0px 4px 9px rgb(0 0 0 / 30%);
+            .tuto_icons{
+                color: #9356dc;
+            }
+        }
+    }
+    .tuto_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text_white;
+        border-radius: 100px;
+        height: 20px;
+        width: 20px;
+        background: #9356dc;
+        position: relative;
+        left: -10px;
+    }
+    .tuto_icons {
+        display: flex;
+        color: gray;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .tuto_card_text {
+        font-weight: bold;
+    }
+}
+.restaurant {
+    background: $grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .restaurant_title {
+        width: 90%;
+        padding: 20px 20px 50px 20px;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
+.restaurant_card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: white;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+    color: black;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .restaurant_name {
+        font-weight: bold;
+    }
+    .restaurant_card_icon {
+        right: 6%;
+        bottom: 15px;
+        font-size: 30px;
+        position: absolute;
+        .icon_card_full {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: -webkit-linear-gradient(top, rgba(147, 86, 220), rgba(255, 121, 218));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: initial;
+            opacity: 0;
+            position: absolute;
+            font-size: 30px;
+            font-weight: bold;
+            transition: 330ms;
+            cursor: pointer;
+                &:hover{
+                     opacity: 1;
+                    animation:cubic-bezier(.32,.33,.7,.69) appear 300ms;
+                }
+            
+        }
+        .icon_card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 500;
+        } 
+    }
+    .new_card {
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        margin-top: 10px;
+        right: 7%;
+    }
+    .restaurant_card_text {
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+// body //
+// responsive desktop //
+@media screen and (min-width: 1440px){
+
+
+    .tuto{
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .tuto_title{
+            width: 100%;
+        }
+        .tuto_card{
+            width: 30%;
+        }
+    }
+    .restaurant {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.4fr 1.4fr 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . "
+    "r1 r1 r2 r2"
+    "r3 r3 r4 r4"
+    ". . . .";
+    
+    .restaurant_card{
+        position: relative;
+        .new_card{
+            margin-top: 20px;
+            right: 5%;
+        }
+    }
+}
+.r1 { 
+    grid-area: r1; 
+    justify-self: center;
+}
+.r2 { 
+    grid-area: r2; 
+    justify-self: center;
+}
+.r3 { 
+    grid-area: r3; 
+    justify-self: center;
+}
+.r4 { 
+    grid-area: r4; 
+    justify-self: center;
+}
+}
+// responsive desktop //
