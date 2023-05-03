@@ -1,53 +1,100 @@
+// mixin colors
+$grey:#EAEAEA;
+$dark-grey:#353535;
+$purple:#9356dc;
+$background:#F7F7F7;
+$green:#99E2D0;
+
 * {
     margin: 0;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
 }
-$text_white: #fff;
-$grey: #f6f6f6;
-// header //
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    .head_title {
-        font-family: "Shrikhand", cursive;
-        color: black;
-        font-size: 2em;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-}
-// header //
 
-// footer //
-footer {
+a{
+    color: inherit;
+}
+
+.menupage_navbar{
     display: flex;
-    flex-direction: column;
-    background: #353535;
-    padding: 10px;
-    #head_footer {
-        font-family: "Shrikhand", cursive;
-        color: $text_white;
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
-    ul {
-        padding: 0;
-    }
-    li {
+    align-items: center;
+    height: 63px;
+    justify-content: center;
+    .arrow_nav{
         display: flex;
-        color: $text_white;
-        margin-bottom: 10px;
-        cursor: pointer;
-        a{
-            color: $text_white;
-        }
-        i {
-            margin-right: 10px;
-        }
+        position: absolute;
+        left: 23px;
+        align-self: center;
+        font-size: 19px;
+    }
+    .nav_logo{
+        width: 100%;
+        font-family: 'Shrikhand', cursive;
+        font-weight: 400;
+        font-size: 30px;
     }
 }
-// footer //
+
+.button{
+    width: 218px;
+    height: 50px;
+    border-style: none;
+    border-radius: 25px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        
+    }
+}
+
+.icon_card{
+    font-size: 21px;
+}
+.checkbox{
+    display: none;
+    &:checked~.icon_card{
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    background-color: $dark-grey;
+    color: white;
+    gap: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    h2{
+       font-family: 'Shrikhand', cursive;
+       font-weight: 400;
+       font-size: 18px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 0;
+        li{
+            display: flex;
+            i{
+                width: 11px;
+                height: 13px;
+                margin-right: 11px;
+            }
+        }
+    }
+
+
+}

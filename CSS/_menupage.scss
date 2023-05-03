@@ -1,0 +1,43 @@
+
+.menupage_background{
+    object-fit:cover;
+    img{
+        width: 105%;
+        height: 275px;
+        object-fit: cover;
+    }
+}
+.menupage_menu{
+    border-radius: 50px ;
+    background-color: $grey;
+    margin-top: -60px;
+    position: relative;
+}
+.menupage_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    .menupage_title_text{
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+}
+
+.menu{
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .entree{
+        display: flex;
+        flex-direction: column;
+        .line_under_title{
+            width: 40px;
+            background-color: $green;
+            height: 3px;
+        }
+    }
+}
