@@ -242,6 +242,8 @@ footer ul li i {
   display: flex;
   align-items: baseline;
   width: 100%;
+  font-size: 24px;
+  font-weight: 700;
   padding-bottom: 26px;
 }
 .fonctionnement .fonctionnement_card_container {
@@ -293,7 +295,15 @@ footer ul li i {
   padding: 15px 15px 66px 15px;
   gap: 18px;
 }
-.restaurant .restaurant_title {
+.restaurant .restaurant_title_container {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.restaurant .restaurant_title_container .restaurant_title {
   font-size: 24px;
   font-weight: 700;
 }
