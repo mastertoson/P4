@@ -33,11 +33,14 @@
 
 @keyframes appear_menu {
   0% {
-    transform: translateX(200%);
+    transform: scale(0%);
+    opacity: 0;
   }
 
   100% {
-    transform: translateX(0%);
+    transform: scale(100%);
+    opacity: 1;
   }
+  
 
 }

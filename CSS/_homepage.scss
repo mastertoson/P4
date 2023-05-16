@@ -57,6 +57,7 @@
             height: 72px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
+            cursor: pointer;
 
             .fonctionnement_number {
                 @include flex-center;
@@ -74,14 +75,14 @@
                 @include flex-center;
                 color: #7E7E7E;
                 font-size: 19px;
-
-                &--purple {
-                    color: $purple;
-                }
             }
 
             .fonctionnement_card_text {
                 font-weight: 500;
+            }
+
+            &:hover .fonctionnement_icons {
+                color: $purple;
             }
         }
     }
@@ -94,18 +95,19 @@
     padding: 15px 15px 66px 15px;
     gap: 18px;
 
-    .restaurant_title_container{
+    .restaurant_title_container {
         display: flex;
         align-items: baseline;
         width: 100%;
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 10px;
+
         .restaurant_title {
             font-size: 24px;
-            font-weight: 700; 
+            font-weight: 700;
         }
-}
+    }
 
     .restaurant_card_container {
         gap: 18px;
@@ -190,7 +192,7 @@
 
     .restaurant {
         padding: 30px 175px 30px 175px;
-        
+
         .restaurant_card_container {
 
             display: grid;

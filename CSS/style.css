@@ -25,10 +25,12 @@
 }
 @keyframes appear_menu {
   0% {
-    transform: translateX(200%);
+    transform: scale(0%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0%);
+    transform: scale(100%);
+    opacity: 1;
   }
 }
 * {
@@ -260,6 +262,7 @@ footer ul li i {
   height: 72px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  cursor: pointer;
 }
 .fonctionnement .fonctionnement_card_container .fonctionnement_card .fonctionnement_number {
   display: flex;
@@ -281,11 +284,11 @@ footer ul li i {
   color: #7E7E7E;
   font-size: 19px;
 }
-.fonctionnement .fonctionnement_card_container .fonctionnement_card .fonctionnement_icons--purple {
-  color: #9356dc;
-}
 .fonctionnement .fonctionnement_card_container .fonctionnement_card .fonctionnement_card_text {
   font-weight: 500;
+}
+.fonctionnement .fonctionnement_card_container .fonctionnement_card:hover .fonctionnement_icons {
+  color: #9356dc;
 }
 
 .restaurant {
@@ -423,44 +426,44 @@ footer ul li i {
   cursor: pointer;
 }
 .menu .delay_1 {
-  animation: appear_menu 600ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 1300ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_2 {
-  animation: appear_menu 700ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 1400ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_3 {
-  animation: appear_menu 800ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 1500ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_4 {
-  animation: appear_menu 900ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 1900ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_5 {
-  animation: appear_menu 1000ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2000ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_6 {
-  animation: appear_menu 1100ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2100ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_7 {
-  animation: appear_menu 1200ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2200ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_8 {
-  animation: appear_menu 1300ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2600ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_9 {
-  animation: appear_menu 1400ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2700ms;
+  animation-timing-function: ease-in-out;
 }
 .menu .delay_10 {
-  animation: appear_menu 1500ms;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: appear_menu 2800ms;
+  animation-timing-function: ease-in-out;
 }
 
 .entree {
