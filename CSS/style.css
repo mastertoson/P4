@@ -25,7 +25,7 @@
 }
 @keyframes appear_menu {
   0% {
-    transform: scale(0%);
+    transform: scale(200%);
     opacity: 0;
   }
   100% {
@@ -89,6 +89,12 @@ a {
 }
 
 .restaurant_card_icon {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.menu_card_icon {
   position: relative;
   display: flex;
   align-items: center;
