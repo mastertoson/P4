@@ -35,6 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 
     .delay_1 {
         animation: appear_menu 600ms;

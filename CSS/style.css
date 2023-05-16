@@ -410,6 +410,7 @@ footer ul li i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 .menu .delay_1 {
   animation: appear_menu 600ms;
