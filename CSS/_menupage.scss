@@ -96,6 +96,7 @@
     h3 {
         font-size: 16px;
         font-weight: 300;
+        
     }
 
     .line_under_title {
@@ -122,6 +123,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    
 
 
     .card_content {
@@ -199,7 +201,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
     .menupage_background {
         img {
@@ -223,13 +225,13 @@
         }
 
         .menu {
-            padding: 0 210px 0 210px;
+            padding: 0 21% 0 21%;
 
         }
     }
 }
 
-@media screen and (min-width: 820px) and (max-width:1440px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
     .menupage_menu {
         display: flex;
         flex-direction: column;
