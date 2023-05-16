@@ -136,7 +136,7 @@ footer {
   font-size: 16px;
   font-weight: 500;
 }
-footer h3 {
+footer .footer_logo {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 18px;
@@ -458,7 +458,7 @@ footer ul li i {
   flex-direction: column;
   padding-left: 13px;
 }
-.entree h3 {
+.entree h2 {
   font-size: 16px;
   font-weight: 300;
 }
